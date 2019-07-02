@@ -11,6 +11,7 @@ docker push x3kcl/multi-server:$SHA
 docker push x3kcl/multi-worker:$SHA
 
 kubectl apply -f k8s
+
 kubectl set image deployments/server-deployment server=x3kcl/multi-server:$SHA
 kubectl set image deployments/client-deployment client=x3kcl/multi-client:$SHA
 kubectl set image deployments/worker-deployment worker=x3kcl/multi-worker:$SHA
