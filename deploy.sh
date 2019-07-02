@@ -1,7 +1,7 @@
 docker build -t x3kcl/multi-client:latest -t x3kcl/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t x3kcl/multi-server:latest -t x3kcl/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t x3kcl/multi-worker:latest -t x3kcl/multi-worker:$SHA -f ./worker/Dockerfile ./worker
-
+ 
 docker push x3kcl/multi-client:latest
 docker push x3kcl/multi-server:latest
 docker push x3kcl/multi-worker:latest
