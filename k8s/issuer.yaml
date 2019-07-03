@@ -8,4 +8,4 @@ spec:
     email: 'bodo@naumann.cc'
     privateKeySecretRef:
       name: letsencrypt-prod
-http01: {}
+    http01: {}
