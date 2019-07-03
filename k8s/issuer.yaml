@@ -5,7 +5,7 @@ metadata:
 spec:
   acme:
     server: https://acme-v02.api.letsencrypt.org/directory
-    email: 'bodo@naumann.cc'  
+    email: 'bodo@naumann.cc'
     privateKeySecretRef:
       name: letsencrypt-prod
-    http01: {}
+http01: {}
